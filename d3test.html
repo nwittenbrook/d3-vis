@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<link href="d3test.css" rel="stylesheet">
+<link href= "rankings.css" rel="stylesheet">
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+<div class="container-fluid">
+<div class="navbar-header"><a class="navbar-brand" href="#">Seattle/UW D3 Data Visualization Examples</a></div>
+<div>
+<ul id="menu" class="nav navbar-nav">
+	<li><a href="#studentpie">Student Breakdown</a></li>
+	<li><a href="#rainfall">Annual Rainfall</a></li>
+	<li><a href="#applicants">Admissions</a></li>
+	<li><a href="#demographics">Demographics</a></li>
+	<li><a href="#attendance">Total Attendance Cost</a></li>
+	<li><a href="#links">Links</a></li></ul>
+	</div></div></nav>
+<div class="visex">
+<h2 id="studentpie">UW Student Breakdown</h2>
+<h3><span id="numS">43,762</span> total enrolled students</h3>
+<div>Pick a year: 
+<select id="year-list"> 
+  <option selected="selected" value="y2012">2012-13</option>
+  <option value="y2011">2011-12</option>
+  <option value="y2010">2010-11</option>
+  <option value="y2009">2009-10</option>
+</select>
+</div>
+<div class="piechart"></div>
+</div>
+<h2 id="rainfall">Average Annual Rainfall</h2>
+<div class="rainbar"></div>
+<h2 id="applicants">Admission Breakdown, Autumn 2013</h2>
+<div class="appbar"></div>
+<h2 id="demographics">Student Demographics, Autumn 2013</h2>
+<div class="container"><div class="demopie"><svg class="testpie"></svg></div></div>
+<h2 id="attendance">Total Cost of Attendance</h2>
+<div>Pick a year: 
+<select id="year-list2"> 
+  <option selected="selected" value="y2012">2012-13</option>
+  <option value="y2011">2011-12</option>
+  <option value="y2010">2010-11</option>
+  <option value="y2009">2009-10</option>
+</select>
+<div class="stackbar"></div>
+<h2 id="links">Links and References</h2>
+<ol>
+<li><a href="http://54.186.167.206/blp-data/">Course Connect</a></li>
+<li><a href="http://bl.ocks.org/dbuezas/9306799">Animated Donut Chart</a></li>
+<li><a href="http://bl.ocks.org/mbostock/1346410">Updating Pie Chart</a></li>
+</ol>
+</body>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<script src="d3.ay-pie-chart.js"></script>
+<script src="rankings.js"></script>
+<script src="studentdata.js"></script>
+<script src="appbar.js"></script>
+<script src="demopie.js"></script>
+<script src="stackbar.js"></script>
